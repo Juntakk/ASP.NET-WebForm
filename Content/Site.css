@@ -1,0 +1,173 @@
+﻿body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/Images/b1.jpg");
+    text-align: center;
+}
+
+h2, h3 {
+    color: wheat;
+    font-style: italic;
+}
+
+h1 {
+    width:230px;
+    color: wheat; /* White text color */
+    padding: 15px; /* Increased padding for better spacing */
+    text-align: start; /* Center the text */
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Use a specific font stack */
+}
+
+
+.hero-image {
+    position: relative;
+    height: 550px;
+    background: url("/Images/b5.jpg");
+    color: wheat;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.navbar {
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 100px;
+}
+
+.navbar-brand {
+    font-size: 40px;
+}
+
+.nav-link {
+    font-size: 25px;
+    font-weight: bold;
+    font-style: oblique;
+    margin-left: 15px;
+}
+
+.nav-link {
+    color: wheat;
+}
+
+    .nav-link:hover {
+        color: whitesmoke;
+        font-size: 26px;
+        transition: 0.7s;
+    }
+
+.frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 40px;
+    align-items: center;
+
+    height: 100px;
+    width: 100%;
+    position: relative;
+    box-shadow: -7px -7px 20px black, -4px -4px 5px 0px black, 7px 7px 20px 0px black, inset 0px 0px 0px 0px black, inset 0px 0px 0px 0px black, inset 0px 0px 0px 0px black, inset 0px 0px 0px 0px black;
+    transition: box-shadow 0.6s cubic-bezier(0.79,0.21,0.06,0.81);
+    border-radius: 10px;
+}
+
+.btn {
+    height: 45px;
+    width: 45px;
+    border-radius: 150px;
+    background: wheat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -7px -7px 20px black, -4px -4px 5px 0px black, 7px 7px 20px 0px , 4px 4px 5px 0px , inset 0px 0px 0px 0px , inset 0px 0px 0px 0px , inset 0px 0px 0px 0px black, inset 0px 0px 0px 0px black;
+    transition: box-shadow 0.6s cubic-bezier(0.79,0.21,0.06,0.81);
+    font-size: 16px;
+    color: rgba(42,52,84,1);
+    text-decoration: none;
+}
+
+    /* active button */
+
+    .btn:active {
+        box-shadow: 4px -4px 6px 0px rgba(255,255,255,0.5), -4px -4px 6px 0px rgba(116,125,136,0.2), inset -4px -4px 6px 0px rgba(255,255,255,0.5), inset 4px 4px 6px 0px black;
+    }
+
+.btn1 {
+    color: wheat;
+    background-color: darkgreen;
+    padding: 15px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-top: 15px;
+    text-decoration: none;
+    margin-left: 45px;
+}
+
+    .btn1:hover {
+        color: wheat;
+        background-color: seagreen;
+        transition: 0.7s;
+    }
+
+.btnAddCart {
+    background-color: rgb(192, 189, 189);
+    color: black;
+    border: hidden;
+    border-radius: 8px;
+    padding: 5px;
+    height: 60px;
+    width: 100%;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+    .btnAddCart:hover {
+        background-color: #E3E3E3;
+    }
+
+.form-control{
+    background-color:wheat;
+}
+.btnSearch{
+    margin-right:190px;
+    margin-top:20px;
+    padding:5px;
+    background-color:seagreen;
+    color:wheat;
+    border:hidden;
+    border-radius:5px;
+    padding:7px;
+    font-weight:bolder;
+}
+
+
+.name, .price, .quantity{
+    color:black;
+    font-weight:bolder;
+    font-size:20px;
+}
+
+.ro{
+    padding:10px;
+}
+.cont{
+    background-color:wheat;
+    border-radius:10px;
+}
+.removeCart{
+    background-color:#a31616;
+    border-radius:10px;
+    color:wheat;
+    padding:7px;
+}

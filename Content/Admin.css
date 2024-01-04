@@ -1,0 +1,75 @@
+﻿.confirmation{
+    font-size:25px;
+    color:wheat;
+    margin-left:200px;
+}
+.btn2{
+    background-color: seagreen;
+    border-radius: 10px;
+    margin-top: 5px;
+    font-size:20px;
+    margin-bottom:30px;
+    color:wheat;
+    padding:10px;
+}
+.btn2:hover{
+    background-color:darkseagreen;
+    color:black;
+    transition:0.5s;
+}
+
+.contAdmin{
+    margin-top:100px;
+    margin-right:30px;
+}
+.gridView1{
+    color:black;
+    margin-top:30px;
+    width:900px;
+    margin-left:50px;
+    font-size:17px;
+    background-color:wheat;
+    padding:3px;
+    font-weight:bolder;
+    font-style:italic;
+    border:hidden;
+    border-radius:10px;
+}
+
+.productBtn{
+    padding:5px;
+    border-radius:10px;
+    background-color:seagreen;
+    color:white;
+    font-size:17px;
+    margin:5px;
+}
+.productImg{
+    padding:10px;
+}
+.productBtn:hover{
+    background-color:mediumseagreen;
+    transition:0.5s;
+}
+
+.navbar{
+    background-color:seagreen;
+    color:wheat;
+    padding:20px;
+    font-weight:bold;
+    height:80px;
+}
+.nav-link{
+    color:wheat;
+}
+.nav-link:hover{
+    color:darkseagreen;
+    transition:0.7s;
+}
+body{
+    color:wheat;
+    background-image:url("/Images/b1.jpg");
+    font-weight:bolder;
+    font-size:17px;
+}
+

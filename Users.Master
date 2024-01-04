@@ -1,0 +1,122 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Users.master.cs" Inherits="Projet_AppTrans.UsersMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome
+    </title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+
+    <webopt:BundleReference runat="server" Path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/1266afb6a4.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+    <link href="Content/Site.css" rel="stylesheet" />
+</head>
+
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see https://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand me-5" runat="server" href="~/Customers/MainPage">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="75px" height="75px" fill="wheat" class="bi bi-shop" viewBox="0 0 16 16">
+                        <path d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0M1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5M4 15h3v-5H4zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1zm3 0h-2v3h2z" />
+                    </svg></a>
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" title="Toggle navigation" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-sm-inline-flex justify-content-between ms-5">
+                    <ul class="navbar-nav">
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Vegetables">Vegetables</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Fruits">Fruits</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Seafood">Seafood</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Meat">Meat</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Dairy">Dairy</a></li>
+                        <li class="nav-item ms-2"><a class="nav-link" runat="server" href="~/Customers/Desserts">Desserts</a></li>
+
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item me-5">
+                            <a class="nav-link" runat="server" href="~/Customers/Cart">Cart</a>
+
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link me-2" runat="server" href="Login/Login">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="container body-content">
+
+
+            <asp:ContentPlaceHolder ID="UserContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+        </div>
+
+
+    </form>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/Scripts/bootstrap.js") %>
+    </asp:PlaceHolder>
+
+        <footer>
+            <div class="frame bg-dark">
+                <a href="#" class="btn">
+                    <i class="fa fa-facebook" style="color: #3b5998;"></i>
+                </a>
+                <a href="#" class="btn">
+                    <i class="fa fa-twitter" style="color: #00ecee;"></i>
+                </a>
+                <a href="#" class="btn">
+                    <i class="fa fa-instagram" style="color: #ea4c89;"></i>
+                </a>
+                <a href="#" class="btn">
+                    <i class="fa fa-github" style="color: #0e76a8;"></i>
+                </a>
+                <a href="#" class="btn">
+                    <i class="fa fa-google" style="color: #ee4056;"></i>
+                </a>
+                <a href="#" class="btn">
+                    <i class="fa fa-youtube" style="color: #65d838;"></i>
+                </a>
+            </div>
+        </footer>
+</body>
+</html>

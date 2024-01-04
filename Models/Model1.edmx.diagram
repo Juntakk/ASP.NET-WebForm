@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="4bb40846420d4bdda1b4015269877e92" Name="Diagram1">
+        <EntityTypeShape EntityType="ProjetModel.Admin" Width="1.5" PointX="3" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Admin_Discount" Width="1.5" PointX="5.25" PointY="8.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Category" Width="1.5" PointX="0.75" PointY="1.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Customer" Width="1.5" PointX="0.75" PointY="5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Customer_Discount" Width="1.5" PointX="5.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Order_Details" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Orders" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.Products" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="ProjetModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <AssociationConnector Association="ProjetModel.FK_Admin_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetModel.FK_Admin_Discount_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetModel.FK_Products_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetModel.FK_Orders_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetModel.FK_Order_Details_Customer" ManuallyRouted="false" />
+        <AssociationConnector Association="ProjetModel.FK_Order_Details_Orders" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
