@@ -1,4 +1,4 @@
-SET IDENTITY_INSERT [dbo].[Products] ON
+﻿SET IDENTITY_INSERT [dbo].[Products] ON
 INSERT INTO [dbo].[Products] ([id], [name], [quantity], [price], [category_id], [image_path], [description]) VALUES (3, N'Artichoke', 2, CAST(3.00 AS Decimal(18, 2)), 1, N'~/Images/articho.jpg', N'Healthy and not at all hard to prepare')
 INSERT INTO [dbo].[Products] ([id], [name], [quantity], [price], [category_id], [image_path], [description]) VALUES (4, N'Banana', 0, CAST(1.00 AS Decimal(18, 2)), 2, N'~/Images/banana.jpg', N'Oooh banana (Donkey Kong reference)')
 INSERT INTO [dbo].[Products] ([id], [name], [quantity], [price], [category_id], [image_path], [description]) VALUES (5, N'Banana split', 2, CAST(9.00 AS Decimal(18, 2)), 6, N'~/Images/bananasplit.jpg', N'Boom it goes in your mouth and it''s delicious')
